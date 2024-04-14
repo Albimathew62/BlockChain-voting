@@ -1,60 +1,73 @@
+/* Global styles */
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 li {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
   color: white;
 }
+
+/* Navigation styles */
 nav {
   display: flex;
   height: 11vh;
-  background: tomato;
+  background: rgb(18, 107, 139);
   justify-content: space-around;
   position: sticky;
   top: 0;
   align-items: center;
 }
+
 nav .header {
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
+  transition: color 0.3s; /* Smooth transition for text color */
 }
+
 nav .header:hover {
   cursor: pointer;
+  color: #2a75bc; /* Change color on hover */
 }
+
 nav .navbar-links {
   display: flex;
   justify-content: space-around;
   width: 70%;
   cursor: pointer;
 }
+
 nav .navbar-links a {
   font-size: 17px;
   font-weight: normal;
   cursor: pointer;
   text-transform: capitalize;
+  transition: color 0.3s; /* Smooth transition for text color */
 }
+
+/* Hover effect on navigation links */
 nav .navbar-links a:hover {
-  cursor: pointer;
-  color: black;
+  color: #000; /* Change text color on hover */
 }
+
 nav .burger-menu {
   font-size: 24px;
   color: white;
   cursor: pointer;
   display: none;
 }
-.nav-active {
-  color: black;
-}
 
+/* Mobile styles */
 @media all and (max-width: 777px) {
   nav .burger-menu {
     display: block;
   }
+  
   nav .navbar-links {
     background-color: tomato;
     display: block;
@@ -63,10 +76,23 @@ nav .burger-menu {
     top: 100%;
     left: 0;
     padding: 0px;
-    transform: translate(-700px);
+    transform: translateX(-100%); /* Hide menu off-screen by default */
+    transition: transform 0.3s ease-in-out; /* Smooth transition animation */
   }
+  
+  /* Show navigation links when burger menu is clicked */
+  nav.nav-active .navbar-links {
+    transform: translateX(0); /* Slide menu into view */
+  }
+  
   nav .navbar-links li {
     padding: 25px;
     border-top: 3px solid white;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  /* Hover effect on mobile navigation links */
+  nav .navbar-links li:hover {
+    background-color: #fff; /* Change background color on hover */
   }
 }

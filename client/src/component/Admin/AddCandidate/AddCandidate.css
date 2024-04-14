@@ -1,36 +1,76 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Form container styles */
 .form {
   width: fit-content;
-  margin: 5px;
-  padding: 7px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 5px auto;
+  padding: 20px;
   overflow: auto;
+  background-color: #f8f9fa; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1); /* Shadow effect */
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
 }
+
+/* Hover effect on form container */
+.form:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Input field styles */
 .input-ac {
-  margin: 0.5em;
-  margin-left: 0;
-  padding: 1em;
+  margin: 0.5em 0;
+  padding: 10px;
   display: block;
   width: 333px;
+  border: 1px solid #ced4da; /* Gray border */
+  border-radius: 5px; /* Rounded corners */
+  transition: border-color 0.3s ease; /* Smooth border color transition */
 }
+
+/* Hover effect on input field */
+.input-ac:hover,
+.input-ac:focus {
+  border-color: #6c757d; /* Dark gray border on hover/focus */
+}
+
+/* Label styles */
 .label-ac {
   display: block;
   margin: 0.1em;
   padding: 0.5em;
 }
+
+/* Add button styles */
 .btn-add {
   width: 25%;
-  padding: 1em;
-  float: inline-end;
+  padding: 10px;
+  float: right;
   margin: 1em;
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
+/* Hover effect on add button */
+.btn-add:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive styles for small screens */
 @media all and (max-width: 400px) {
   .input-ac,
   .btn-add {
     width: 100%;
   }
   .btn-add {
-    float: inline-start;
+    float: left;
   }
 }

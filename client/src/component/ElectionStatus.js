@@ -31,3 +31,4 @@ const ElectionStatus = (props) => {
 };
 
 export default ElectionStatus;
+

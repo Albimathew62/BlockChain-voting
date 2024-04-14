@@ -1,9 +1,31 @@
+/* Button styles */
 .start-btn {
-  display: block;
-  padding: 21px;
-  margin: 7px;
-  min-width: max-content;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px;
+  min-width: 150px; /* Adjust min-width as needed */
   text-align: center;
-  width: 333px;
+  width: auto; /* Let the button adjust its width based on content */
   align-self: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* Text color */
+  background-color: #007bff; /* Blue background */
+  border: 2px solid #007bff; /* Blue border */
+  border-radius: 30px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect on button */
+.start-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  border-color: #0056b3; /* Darker border on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media all and (max-width: 600px) {
+  .start-btn {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
 }

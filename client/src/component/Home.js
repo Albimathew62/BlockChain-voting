@@ -39,7 +39,7 @@ export default class Home extends Component {
       window.location.reload();
     }
     try {
-      // Get network provider and web3 instance.
+      // Get network provider and web3 instanc
       const web3 = await getWeb3();
 
       // Use web3 to get the user's accounts.

@@ -1,7 +1,32 @@
+/* Button styles */
 .btn-verification {
-  padding: 11px;
-  width: 100%;
+  padding: 12px 24px; /* Adjust padding as needed */
+  width: fit-content; /* Adjust width as needed */
   margin-top: 11px;
   margin-bottom: 11px;
-  float: inline-end;
+  float: right; /* Align button to the right */
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* Text color */
+  background-color: #28a745; /* Green background */
+  border: 2px solid #28a745; /* Green border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transitions */
 }
+
+/* Hover effect on button */
+.btn-verification:hover {
+  background-color: #218838; /* Darker green on hover */
+  border-color: #218838; /* Darker border on hover */
+  transform: scale(1.05); /* Scale up slightly on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media all and (max-width: 600px) {
+  .btn-verification {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+}
+

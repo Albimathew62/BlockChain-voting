@@ -11,7 +11,7 @@ const Footer = () => (
           View this project on{" "}
           <a
             className="profile"
-            href="https://github.com/arlbibek/dVoting"
+            href="https://github.com/Albimathew62"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -23,11 +23,11 @@ const Footer = () => (
           Made with <i className="fas fa-heartbeat" /> by{" "}
           <a
             className="profile"
-            href="https://arlbibek.github.io"
+            href="https://www.instagram.com/al__b___?igsh=NXhkdGJxYWp1eGg5"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Bibek Aryal
+            Albi Mathew
           </a>
           .
         </p>

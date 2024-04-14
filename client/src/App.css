@@ -1,41 +1,46 @@
+/* Global styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 h1 {
   text-align: center;
 }
 
+/* Code styles */
 code {
   font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   background-color: #f1f1f1;
   padding: 2px;
   font-size: 105%;
   border-radius: 6px;
-  border: 1px solid;
+  border: 1px solid transparent; /* Transparent border */
+  transition: border-color 0.3s; /* Smooth transition for border color */
 }
 
+code:hover {
+  border-color: #ccc; /* Light gray border on hover */
+}
+
+/* Main container styles */
 .container-main {
-  background-color: none;
   padding: 1%;
-  margin: 11px;
-  margin-left: auto;
-  margin-right: auto;
-  width: max-content;
+  margin: 11px auto; /* Center the container */
+  max-width: 1200px; /* Maximum width */
   overflow: auto;
 }
 
+/* Item container styles */
 .container-item {
-  transition: ease all 0.5s;
+  transition: all 0.5s ease; /* Smooth transition for all properties */
   background-color: #f2f2f2;
   border-radius: 7px;
   width: 977px;
   padding: 17px;
   margin: 17px auto;
-  align-items: center;
-  justify-content: center;
   display: flex;
   overflow: auto;
 }
@@ -44,66 +49,89 @@ code {
   text-transform: capitalize;
 }
 
+/* List container styles */
 .container-list {
   width: 100%;
   padding: 11px;
   margin: 3px auto;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  display: block;
   overflow: auto;
 }
+
+/* Center items styles */
 .center-items {
   display: grid;
   place-items: center;
 }
 
+/* Media queries */
 @media all and (max-width: 1020px) {
   .container-item {
     width: 777px;
   }
 }
+
 @media all and (max-width: 900px) {
   .container-item {
     width: 800px;
-    display: block;
   }
 }
+
 @media all and (max-width: 850px) {
   .container-item {
     width: 700px;
   }
 }
+
 @media all and (max-width: 750px) {
   .container-item {
     width: 600px;
   }
 }
+
 @media all and (max-width: 650px) {
   .container-item {
     width: 400px;
   }
 }
+
 @media all and (max-width: 400px) {
   .container-item {
     width: 300px;
   }
 }
 
+/* Notification styles */
 .info,
 .attention,
 .alert,
 .success {
-  border: 1px solid black;
+  border: 1px solid transparent;
   margin-top: 11px;
-  margin-bottom: 11px px;
+  margin-bottom: 11px;
+  transition: border-color 0.3s, background-color 0.3s; /* Smooth transition for border and background color */
 }
+
 .info {
   background-color: #ddffff;
 }
+
 .attention {
   background-color: #fffbdd;
 }
+
+.alert {
+  background-color: #ffdddd;
+}
+
 .success {
   background-color: #ddffdd;
+}
+
+.info:hover,
+.attention:hover,
+.alert:hover,
+.success:hover {
+  border-color: #ccc; /* Light gray border on hover */
 }

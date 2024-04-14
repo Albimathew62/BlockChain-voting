@@ -1,15 +1,38 @@
+/* Label styles */
 .label-home {
   padding: 0.5em;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
 }
+
+/* Input field styles */
 .input-home {
   margin-top: 1em;
   margin-left: 7px;
   margin-right: 7px;
   padding: 1em;
   min-width: 300px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for background, text, and border color */
 }
+
+/* Common styles for input and label */
 .input-home,
 .label-home {
   display: block;
   margin-bottom: 11px;
+}
+
+/* Hover effect on label */
+.label-home:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+/* Hover effect on input */
+.input-home:hover {
+  background-color: #f8f8f8; /* Slightly lighter background on hover */
+}
+
+/* Focus effect on input */
+.input-home:focus {
+  border-color: #007bff; /* Blue border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow effect on focus */
 }
