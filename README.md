@@ -40,7 +40,7 @@ Download and install metamask from here.
 Configuring the project for development
 Clone this repository
 
-git clone https://github.com/arlbibek/dVoting.git
+
 cd dVoting
 Run local Ethereum blockchain
 
