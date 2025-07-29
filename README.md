@@ -114,14 +114,3 @@ Then visit `http://127.0.0.1:8080` (or as shown) and connect MetaMask to **Local
 This project is licensed under the [MIT License](LICENSE).
 
 ```
-
----
-
-Would you also like:
-
-- A `.gitignore` file to clean up unneeded pushes?
-- A default `LICENSE` file?
-- Help deploying to a testnet like Sepolia?
-
-Let me know — happy to assist!
-```
