@@ -1,32 +1,34 @@
 /* Button styles */
 .btn-verification {
-  padding: 12px 24px; /* Adjust padding as needed */
-  width: fit-content; /* Adjust width as needed */
+  padding: 12px 24px;
+  width: fit-content;
   margin-top: 11px;
   margin-bottom: 11px;
-  float: right; /* Align button to the right */
+  float: right;
   font-size: 16px;
   font-weight: bold;
-  color: #fff; /* Text color */
-  background-color: #28a745; /* Green background */
-  border: 2px solid #28a745; /* Green border */
-  border-radius: 5px; /* Rounded corners */
+  color: #333; /* Dark gray text color */
+  background-color: #007bff; /* Red background */
+  border: 2px solid #007bff; /* Red border */
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transitions */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 /* Hover effect on button */
 .btn-verification:hover {
-  background-color: #218838; /* Darker green on hover */
-  border-color: #218838; /* Darker border on hover */
-  transform: scale(1.05); /* Scale up slightly on hover */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  background-color: #0056b3; /* Darker red on hover */
+  border-color: #0056b3; /* Darker border on hover */
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsive styles for smaller screens */
 @media all and (max-width: 600px) {
   .btn-verification {
-    font-size: 14px; /* Decrease font size for smaller screens */
+    font-size: 14px;
   }
 }
-
+body:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow to the entire page on hover */
+}

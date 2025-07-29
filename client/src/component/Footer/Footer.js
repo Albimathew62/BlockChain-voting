@@ -20,7 +20,9 @@ const Footer = () => (
           .
         </p>
         <p>
-          Made with <i className="fas fa-heartbeat" /> by{" "}
+          Made
+          
+           by{" "}
           <a
             className="profile"
             href="https://www.instagram.com/al__b___?igsh=NXhkdGJxYWp1eGg5"

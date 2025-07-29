@@ -3,29 +3,31 @@
   display: inline-block;
   padding: 15px 30px;
   margin: 10px;
-  min-width: 150px; /* Adjust min-width as needed */
+  min-width: 150px;
   text-align: center;
-  width: auto; /* Let the button adjust its width based on content */
+  width: auto;
   align-self: center;
   font-size: 16px;
   font-weight: bold;
-  color: #fff; /* Text color */
-  background-color: #007bff; /* Blue background */
-  border: 2px solid #007bff; /* Blue border */
-  border-radius: 30px; /* Rounded corners */
+  color: #fff;
+  background-color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 30px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transitions */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, padding 0.3s, margin 0.3s, box-shadow 0.3s; /* Added transitions for padding, margin, and box-shadow */
+  box-shadow: 0 0 0 transparent; /* Initial box-shadow */
 }
 
 /* Hover effect on button */
 .start-btn:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  border-color: #0056b3; /* Darker border on hover */
+  background-color: #0056b3;
+  border-color: #0056b3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow on hover */
 }
 
 /* Responsive styles for smaller screens */
 @media all and (max-width: 600px) {
   .start-btn {
-    font-size: 14px; /* Decrease font size for smaller screens */
+    font-size: 14px;
   }
 }
